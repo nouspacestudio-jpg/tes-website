@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Nouspace Studios — Brand Systems Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+<a class="logo nav-link" data-page="home">
+      <img src="images/logo heading.png" alt="Nouspace Studios" style="height: 70px;">
+    </a>
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a class="nav-link" data-page="home">Home</a>
+      <a class="nav-link" data-page="work">Work</a>
+      <a class="nav-link" data-page="services">Services</a>
+	  <a class="nav-link" data-page="news">News</a>
+      <a class="nav-link" data-page="about">About</a>
+      <a class="nav-link" data-page="contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div id="home-page" class="page active">
+  <div class="hero-full">
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow">Strategic Branding Studio</div>
+        <h1>We Build Brand Systems That Define How You’re Perceived</h1>
+		<br>
+        <p class="body-large">Nouspace Studio helps businesses move from inconsistent visuals to structured brand systems that communicate with precision and scale with confidence.</p>
+        <div class="hero-buttons">
+          <a class="btn nav-link" data-page="contact">Start a project</a>
+          <a class="btn btn-outline nav-link" data-page="work">View work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="trust-section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-stat"><span class="stat-number" data-target="15">0</span><span class="stat-symbol">+</span><span class="stat-label">Projects Completed</span></div>
+        <div class="trust-stat"><span class="stat-number" data-target="100">0</span><span class="stat-symbol">%</span><span class="stat-label">Client Satisfaction</span></div>
+        <div class="trust-stat"><span class="stat-number" data-target="4">0</span><span class="stat-symbol">+</span><span class="stat-label">Years Experience</span></div>
+        <div class="trust-stat"><span class="stat-number">24/7</span><span class="stat-label">Dedicated Support</span></div>
+      </div>
+      <div class="testimonial-simple">
+        <i class="fas fa-quote-left" style="color: #145FCC; opacity: 0.5; font-size: 24px; margin-right: 12px;"></i>
+        <p class="body-text">"A strong brand doesn’t need to shout to be noticed. It communicates with clarity, moves with structure, and stays consistent across every interaction."</p>
+        <p class="small-text" style="margin-top: 12px;">Nouspace Studio</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-light">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card"><h3>System, Not Decoration</h3><p class="small-text">Every element is designed to function, not just to look good.</p></div>
+        <div class="feature-card"><h3>Built for Real Growth</h3><p class="small-text">Your brand evolves without losing structure.</p></div>
+        <div class="feature-card"><h3>Process with Precision</h3><p class="small-text">Every step is intentional, documented, and scalable.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WORK -->
+<div id="work-page" class="page">
+  <section class="section">
+    <div class="container">
+      <h2 class="uppercase">Selected work</h2>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="brand">Branding</button>
+        <button class="filter-btn" data-filter="packaging">Brand Book</button>
+        <button class="filter-btn" data-filter="digital">Logo Maker</button>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- CASE STUDY -->
+<div id="news-page" class="page">
+    <section class="section">
+        <div class="container">
+            <h2 class="uppercase">Latest News & Insights</h2>
+            <div class="news-grid" id="news-grid">
+                <!-- Berita akan muncul di sini secara otomatis -->
+            </div>
+        </div>
+    </section>
+</div>
+<div id="case-study-page" class="page">
+  <section class="section">
+    <div class="container">
+      <div id="case-study-content"></div>
+      <div class="back-to-work" id="backToWorkBtn">← Back to all work</div>
+      <hr>
+      <div class="case-nav">
+        <span id="prev-case" class="nav-link">← Previous project</span>
+        <span id="next-case" class="nav-link">Next project →</span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- SERVICES -->
+<div id="services-page" class="page">
+  <section class="section">
+    <div class="container">
+      <h2 class="uppercase">We Services</h2>
+      <div class="services-grid" id="services-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- SERVICE DETAIL -->
+<div id="service-detail-page" class="page">
+  <section class="section section-light">
+    <div class="container" id="service-detail-content"></div>
+  </section>
+</div>
+
+<!-- ABOUT - REDESIGNED PREMIUM -->
+<div id="about-page" class="page about-page">
+  <div class="about-hero">
+    <div class="container">
+      <div class="eyebrow" style="color:#145FCC;">Studio Profile</div>
+      <h1>Nouspace<br>Studios</h1>
+      <p class="body-large" style="max-width: 600px; color: rgba(255,255,255,0.8);">We build brand systems for the digital age — precise, scalable, and timeless.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="about-stats-grid">
+      <div class="about-stat"><span class="number">15+</span><span class="label">Projects Delivered</span></div>
+      <div class="about-stat"><span class="number">100%</span><span class="label">Client Retention</span></div>
+      <div class="about-stat"><span class="number">4+</span><span class="label">Years of Craft</span></div>
+      <div class="about-stat"><span class="number">Global</span><span class="label">Reach</span></div>
+    </div>
+    <div class="about-content-grid">
+      <div class="about-text-block"><h3>Philosophy</h3><p>Brands are not just logos — they're living systems. We bring structure to complexity, clarity to chaos, and purpose to every pixel. Our approach is research-led, grid-obsessed, and future-proof.</p></div>
+      <div class="about-text-block"><h3>Positioning</h3><p>Nouspace partners with founders and leaders who demand lasting brand architecture. We deliver systems, not shortcuts. From startups to enterprises, we create identities that scale without losing soul.</p></div>
+    </div>
+    <div class="studio-values">
+      <div class="value-item"><i class="fas fa-drafting-compass"></i><h4>Precision</h4><p>Every detail is deliberate, every proportion considered.</p></div>
+      <div class="value-item"><i class="fas fa-chart-line"></i><h4>Scalability</h4><p>Systems designed to grow with your business.</p></div>
+      <div class="value-item"><i class="fas fa-handshake"></i><h4>Collaboration</h4><p>Transparent process, strategic partnership.</p></div>
+    </div>
+    <div class="team-glimpse"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&auto=format" alt="Studio workspace"></div>
+    <div class="about-cta"><h3 style="color: white;">Let's build something structured</h3><a class="btn nav-link" data-page="contact" style="margin-top: 24px; display: inline-block;">Start a project →</a></div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact-page" class="page">
+  <section class="section section-light">
+    <div class="container">
+      <div class="contact-form">
+        <h2>Let's build something structured</h2>
+        <p class="body-text">Tell us about your project. We'll respond with a clear direction.</p>
+        <form id="contactForm">
+          <div class="form-grid">
+            <div class="field"><label>Name *</label><input type="text" id="name" placeholder="Your name" required></div>
+            <div class="field"><label>Email *</label><input type="email" id="email" placeholder="you@domain.com" required></div>
+            <div class="field"><label>Company</label><input type="text" id="company" placeholder="Company name"></div>
+            <div class="field"><label>Budget</label><select id="budget"><option>Select range</option><option>$20k–$40k</option><option>$40k–$80k</option><option>$80k+</option></select></div>
+            <div class="field"><label>Project type</label><input type="text" id="projectType" placeholder="e.g., brand identity"></div>
+            <div class="field"><label>Timeline</label><input type="text" id="timeline" placeholder="4–8 weeks"></div>
+            <div class="field full-width"><label>Message *</label><textarea id="message" rows="4" placeholder="Tell us about your vision..." required></textarea></div>
+          </div>
+          <button type="submit" class="btn" id="submitBtn">Start your project</button>
+          <div id="successMsg" class="success-message">✓ Thank you! We'll be in touch with a clear direction.</div>
+          <div id="errorMsg" class="error-message">✗ Failed to send. Please use WhatsApp below or try again later.</div>
+        </form>
+        <div class="contact-whatsapp">
+          <a href="https://wa.me/6282117697848?text=Hello%20Nouspace%2C%20I'm%20interested%20in%20your%20branding%20services" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Chat with us on WhatsApp</a>
+          <p class="small-text">Or reach us directly via WhatsApp</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+	  <img src="images/logo footer bawah.png" alt="Nouspace" style="height: 60px;">
+	  <p class="small-text">© 2026 — Nouspace Studios</p></div>
+       <div class="footer-social">
+        <div class="social-links">
+          <a href="https://www.instagram.com/nouspacestudio" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@nouspacestudio" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.behance.net/nouspacestudios" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
+  </div>
+      </div>
+      <div class="footer-contact"><p class="small-text">nouspacestudio@gmail.com</p><p class="small-text">+62 821 1769 7848</p></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // EmailJS initialization with provided credentials
+  (function() {
+    emailjs.init("zOs3UCWHKj-T6DsIq");
+  })();
+</script>
+</body>
+</html>
