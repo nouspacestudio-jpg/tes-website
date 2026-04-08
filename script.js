@@ -1,20 +1,55 @@
 // ---------- DATA ----------
 const projects = [
-  { id: "brewco", title: "Brewco", category: "brand", year: "2024", heroImg: "projek images/heroprojekbrewco.jpg", overview: "Brewco is a specialty coffee branding project focused on creating a modern, minimal, and premium identity.", problem: "The challenge was to stand out in a saturated market while staying warm and approachable.", strategy: "A minimalist approach with strong typography and a consistent visual system.", process: "Research, concept, identity design, and brand application.Research, concept, identity design, and brand application.", result: "A cohesive and modern brand with a clear, premium presence.", images: ["projek images/brewco1.jpg", "projek images/brewco2.jpg"] },
-  { id: "field-fallow", title: "Field & Fallow", category: "packaging", year: "2024", heroImg: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&auto=format", overview: "An artisanal goods brand needed packaging that reflected their craft and sustainability.", problem: "Existing packaging felt generic and didn't communicate values.", strategy: "We created a flexible packaging system using natural textures and earthy tones.", process: "Material exploration, structural design, visual identity, production specs.", result: "A distinctive packaging system that lifted shelf appeal by 35%.", images: ["https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format", "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&auto=format"] },
-  { id: "aurelia", title: "Aurelia", category: "digital", year: "2024", heroImg: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=1200&auto=format", overview: "A meditation app needed a calming yet structured digital identity.", problem: "The interface felt cluttered and inconsistent across platforms.", strategy: "We designed a serene design system with fluid motion and clear hierarchy.", process: "UX audit, visual language, component library, motion guidelines.", result: "User retention increased by 38% post-launch.", images: ["https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&auto=format", "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&auto=format"] },
-  { id: "manifest", title: "Manifest", category: "brand", year: "2023", heroImg: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=1200&auto=format", overview: "A creative collective needed a bold, modular identity.", problem: "Their visual language was outdated and didn't attract premium clients.", strategy: "We developed a flexible identity that adapts to different contexts.", process: "Workshops, identity design, brand guidelines, rollout.", result: "Won 5 major accounts in the first quarter after launch.", images: ["https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&auto=format", "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format"] },
-  { id: "solara", title: "Solara", category: "digital", year: "2024", heroImg: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&auto=format", overview: "A clean energy startup needed a digital-first brand system.", problem: "Lack of cohesive presence across web and social media.", strategy: "We built a system focused on clarity and sustainability cues.", process: "Research, visual identity, responsive web components, social templates.", result: "Launched with 200% increase in qualified leads.", images: ["https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format", "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&auto=format"] },
-  { id: "terra", title: "Terra", category: "packaging", year: "2025", heroImg: "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=1200&auto=format", overview: "Organic skincare brand requiring a premium, eco-conscious packaging system.", problem: "Previous packaging felt cheap and inconsistent.", strategy: "We designed a modular system using recycled materials and minimalist graphics.", process: "Material testing, structural design, graphic identity.", result: "Packaging won a sustainable design award and boosted sales by 28%.", images: ["https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&auto=format", "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format"] }
+  { id: "Brewco", title: "Brewco", category: "Brand Identity", year: "2024", heroImg: "projek images/heroprojekbrewco.jpg", overview: "Brewco is a specialty coffee branding project focused on creating a modern, minimal, and premium identity.", problem: "The challenge was to stand out in a saturated market while staying warm and approachable.", strategy: "A minimalist approach with strong typography and a consistent visual system.", process: "Research, concept, identity design, and brand application. Research, concept, identity design, and brand application.", result: "A cohesive and modern brand with a clear, premium presence.", images: ["projek images/brewco1.jpg", "projek images/brewco2.jpg"] },
+  { id: "Khai", title: "Khai", category: "Brandbook", year: "2025", heroImg: "projek images/khai.jpg", overview: "Khai Home Decoration required a structured brand system to ensure consistency across all visual touchpoints.", problem: "The brand lacked a unified system, resulting in inconsistent visuals and unclear brand perception.", strategy: "We developed a comprehensive brand system focused on clarity, consistency, and a refined modern aesthetic.", process: "Research → Brand Direction → Visual System → Brand Guidelines", result: "A cohesive brand system that ensures consistency, strengthens perception, and supports long-term growth.", images: ["projek images/khai1.jpg", "projek images/khai2.jpg"] },
+  { id: "Alanjo", title: "Alanjo", category: "Brand Applications", year: "2025", heroImg: "projek images/alanjo.jpg", overview: "A set of brand applications designed to bring the identity into a consistent and functional visual system.", problem: "The focus was to maintain clarity and consistency across various brand touchpoints.", strategy: "We applied the visual identity with a structured approach, ensuring balance, clarity, and adaptability.", process: "Research → Marketing Materials → Brand Assets", result: "A consistent visual presence that strengthens recognition and overall brand coherence.", images: ["projek images/alanjo1.jpg", "projek images/alanjo2.jpg"] },
+  { id: "Barbershop 26", title: "Barbershop 26", category: "Brand Identity", year: "2025", heroImg: "projek images/barber26.jpg", overview: "Barbershop 26 needed a clear and distinctive identity to stand out in a competitive market.", problem: "The brand lacked consistency and recognition, making it difficult to build trust.", strategy: "We created a bold, structured logo system inspired by classic barbershop heritage with a modern approach.", process: "Research → Exploration → Construction → Refinement", result: "A stronger identity that improves recognition, consistency, and overall brand perception.", images: ["projek images/barber1.jpg", "projek images/barber2.jpg"] },
+  { id: "Queen City Wealth", title: "Queen City Wealth", category: "Brand Applications", year: "2025", heroImg: "projek images/qcw.jpg", overview: "A series of brand applications designed to translate the identity into a refined and professional visual presence.", problem: "The challenge was to maintain consistency while applying the brand across multiple corporate touchpoints.", strategy: "We applied the brand system with a focus on clarity, structure, and a premium financial aesthetic.", process: "Stationery → Presentation → Social Media → Corporate Materials", result: "A cohesive and professional brand presence that enhances credibility and trust.", images: ["projek images/qcw2.jpg", "projek images/qcw1.jpg"] },
+  { id: "Enchelonone", title: "Enchelonone", category: "Brandbook", year: "2025", heroImg: "projek images/ecelonone.jpg", overview: "EchelonOne required a structured brand system to define a clear and future-ready identity.", problem: "The brand lacked a strong conceptual direction, making its positioning unclear.", strategy: "We developed “The Architect of Motion”. a concept combining precision, movement, and structure.", process: "Research → Concept → System → Guidelines", result: "A clear brand system that strengthens positioning, consistency, and long-term scalability.", images: ["projek images/ecelonone1.jpg", "projek images/ecelonone2.jpg"] }
 ];
 
 const servicesList = [
+  {
+    id: "brand-identity",
+    name: "Brand Identity",
+    description: "A structured brand system built for clarity, consistency, and long-term scalability.",
+    for: "Brands seeking clarity, consistency, and a scalable identity foundation.",
+    deliverables: "Logo system, typography, color system, brand guidelines, and asset library.",
+    timeline: "6–10 weeks",
+    detail: "We don’t just design how your brand looks — we define how it works across every touchpoint."
+  },
 
-  { id: "brand-identity", name: "Brand Identity", description: "A complete brand system designed for clarity, consistency, and long-term growth.", for: "Companies seeking a complete visual system.", deliverables: "Logo, palette, typography, guidelines, assets.", timeline: "6–10 weeks", detail: "From strategy to execution, we build systems that scale." },
-  { id: "logo-design", name: "Logo Design", description: "Distinctive marks designed with meaning and structure — not decoration.", for: "Startups and established brands.", deliverables: "Primary logo, variations, usage guidelines.", timeline: "4–6 weeks", detail: "We create timeless marks that anchor your brand." },
-  { id: "packaging-design", name: "Packaging Design", description: "Strategic packaging systems that connect product, brand, and customer experience.", for: "Product companies launching or refreshing packaging.", deliverables: "Structural concepts, mockups, specifications.", timeline: "8–12 weeks", detail: "From shelf to unboxing, every detail matters." },
-  { id: "social-media-design", name: "Social Media Design", description: "Cohesive visual systems for consistent digital communication.", for: "Brands needing consistent digital presence.", deliverables: "Template systems, asset packs, motion graphics.", timeline: "4–8 weeks", detail: "Maintain brand integrity across all platforms." }
+  {
+    id: "logo-design",
+    name: "Logo",
+    description: "Distinctive marks built with structure, meaning, and long-term relevance.",
+    for: "Brands needing a strong and timeless visual anchor.",
+    deliverables: "Primary logo, variations, construction logic, and usage guidelines.",
+    timeline: "4–6 weeks",
+    detail: "We create logos that are not just seen — but understood and remembered."
+  },
+
+  {
+    id: "packaging-design",
+    name: "Packaging",
+    description: "Strategic packaging designed to connect product, brand, and experience.",
+    for: "Product brands launching or elevating their market presence.",
+    deliverables: "Structural concepts, visual system, mockups, and production-ready specifications.",
+    timeline: "8–12 weeks",
+    detail: "From shelf impact to unboxing experience, every detail is designed with intention."
+  },
+
+  {
+    id: "social-media-design",
+    name: "Digital Brand",
+    description: "Cohesive visual systems for consistent and scalable digital communication.",
+    for: "Brands building a strong and consistent digital presence.",
+    deliverables: "Template systems, content structure, asset library, and motion direction.",
+    timeline: "4–8 weeks",
+    detail: "We ensure your brand communicates consistently across every digital touchpoint."
+  }
 ];
+
 
 const newsList = [
     { 
@@ -27,28 +62,13 @@ const newsList = [
     },
     { 
         id: "news-2", 
-        title: "Studio Update: New Workspace", 
-        date: "March 2026", 
-        excerpt: "Nouspace Studios kini hadir dengan ruang kolaborasi baru yang lebih kreatif.",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800",
-		url: "https://medium.com/@nouspacestudio/crafting-brewco-building-a-modern-coffee-brand-from-the-ground-up-46529b08957b"
+        title: "Why Most Brands Fail Without a System", 
+        date: "April 2026", 
+        excerpt: "Most brands don’t fail because of bad design — they fail because they lack structure. Without a clear system, visual inconsistency builds, messaging becomes fragmented, and growth turns chaotic. A strong brand isn’t just about how it looks, but how it works.",
+        image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*f1b-lj_pqAj_9EHwwqQY0g.png",
+		url: "https://medium.com/p/abfe84f53b94?postPublishedType=initial"
     },
-	    { 
-        id: "news-3", 
-        title: "Studio Update: New Workspace", 
-        date: "March 2026", 
-        excerpt: "Nouspace Studios kini hadir dengan ruang kolaborasi baru yang lebih kreatif.",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800",
-		url: "https://medium.com/@nouspacestudio/crafting-brewco-building-a-modern-coffee-brand-from-the-ground-up-46529b08957b"
-    },
-	    { 
-        id: "news-4", 
-        title: "Studio Update: New Workspace", 
-        date: "March 2026", 
-        excerpt: "Nouspace Studios kini hadir dengan ruang kolaborasi baru yang lebih kreatif.",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800",
-		url: "https://medium.com/@nouspacestudio/crafting-brewco-building-a-modern-coffee-brand-from-the-ground-up-46529b08957b"
-    }
+	   
 ];
 
 let currentProjectIndex = 0;
@@ -60,7 +80,7 @@ function renderWorkGrid() {
   grid.innerHTML = projects.map(p => `
     <div class="project-card" data-category="${p.category}" data-id="${p.id}">
       <div class="card-image"><img src="${p.heroImg}" alt="${p.title}"></div>
-      <div class="card-content"><h3>${p.title}</h3><p class="small-text uppercase">${p.category === 'brand' ? 'Brand Identity' : p.category === 'packaging' ? 'Packaging' : 'Digital'}, ${p.year}</p></div>
+      <div class="card-content"><h3>${p.title}</h3><p class="small-text uppercase">${p.category === 'Brand Identity' ? 'Brand Identity' : p.category === 'Brandbook' ? 'Brandbook' : 'Brand Applications'}, ${p.year}</p></div>
     </div>
   `).join('');
   document.querySelectorAll('.project-card').forEach(card => {
@@ -91,7 +111,7 @@ function renderCaseStudy(index) {
   const container = document.getElementById('case-study-content');
   container.innerHTML = `
     <span class="small-text uppercase" style="color:#145FCC;">Case study</span>
-    <h1 style="margin: 20px 0 8px;">${p.title} · ${p.category === 'brand' ? 'Brand Identity' : p.category === 'packaging' ? 'Packaging' : 'Digital'}</h1>
+    <h1 style="margin: 20px 0 8px;">${p.title} · ${p.category === 'Brand Identity' ? 'Brand Identity' : p.category === 'Brandbook' ? 'Brandbook' : 'Brand Applications'}</h1>
     <p class="uppercase small-text">${p.year}</p>
     <div class="case-image"><img src="${p.heroImg}" alt="${p.title}"></div>
     <div class="case-grid">
